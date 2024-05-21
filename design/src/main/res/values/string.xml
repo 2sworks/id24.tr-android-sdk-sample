@@ -44,6 +44,7 @@
     <string name="pls_sign">Schild</string>
     <string name="clean">Reinigen</string>
     <string name="pls_sign_desc">Zur Identifizierung unterschreiben Sie bitte Ihre Unterschrift in dem angegebenen Bereich.</string>
+    <string name="sign_checkbox_text">Ich möchte mit einem Kundenbetreuer sprechen, der Gebärdensprache spricht.</string>
     <string name="must_have_face">Sie müssen Ihr Gesicht auf dem Bild haben.</string>
     <string name="ident_number">Identifikationsnummer</string>
     <string name="direct_call_wait">Klicken Sie hier, um die vorbereitenden Schritte zu überspringen und eine Verbindung zum Kundenvertreter herzustellen.</string>
@@ -104,11 +105,13 @@
     <string name="finish_vitality_process">Sie haben die Vitalitätsprüfung abgeschlossen. Vielen Dank...</string>
     <string name="german">Deutsche</string>
     <string name="turkish">Türkisch</string>
+    <string name="azerbaijani">Aserbaidschanisch</string>
+    <string name="russian">Russisch</string>
     <string name="choose_language">Sprache wählen</string>
     <string name="call_info_desc">Unser Kundenvertreter wird Sie so schnell wie möglich anrufen und den Identitätsprüfungsprozess durchführen. Stellen Sie während dieser Zeit sicher, dass Sie mit Ihrem Ausweis allein im Raum sind und bereit, ohne diesen Bildschirm zu schließen.</string>
     <string name="take_photo">Foto machen</string>
-    <string name="id_card_front_side">Bitte machen Sie ein Foto von der Vorderseite Ihres Personalausweises und bestätigen Sie es.</string>
-    <string name="id_card_back_side">Bitte machen Sie ein Foto von der Rückseite Ihres Personalausweises und bestätigen Sie es.</string>
+    <string name="id_card_front_side">Bitte platzieren Sie Ihren Personalausweis vor einem dunklen Hintergrund und fotografieren Sie ihn in einem Rahmen.</string>
+    <string name="id_card_back_side">Bitte platzieren Sie Ihren Personalausweis vor einem dunklen Hintergrund und fotografieren Sie ihn in einem Rahmen.</string>
     <string name="mrz_not_avaible_title">Nfc nicht gefunden</string>
     <string name="mrz_not_avaible_desc">Sie können diesen Schritt nicht ausführen, da sich auf Ihrem Gerät kein NFC-Lesegerät befindet. Sie können die Authentifizierung fortsetzen, indem Sie auf die Schaltfläche klicken.</string>
     <string name="pls_take_selfie">Zur Identifizierung bringen Sie bitte Ihr Gesicht in den Rahmen, um ein Foto aufzunehmen und zu bestätigen.</string>
@@ -120,6 +123,7 @@ sag das Wort auf dem Bild</string>
     <string name="now_speech">Du kannst jetzt reden.</string>
     <string name="wrong_text_pls_try">Falsches Wort. Bitte versuche es erneut...</string>
     <string name="speech_info_desc">Um die Vitalität zu bestimmen, sagen Sie bitte das Wort, das Sie auf dem Bild sehen, indem Sie die Taste gedrückt halten.</string>
+    <string name="speech_word">Gesprochenes Wort : </string>
     <string name="choose_ident_type_title">Wie möchten Sie mit dem Authentifizierungsprozess fortfahren?</string>
     <string name="id_card_ident_type">Ich möchte mit meinem neuen Personalausweis fortfahren.</string>
     <string name="passport_ident_type">Ich möchte mit meinem Pass fortfahren.</string>
@@ -142,4 +146,31 @@ sag das Wort auf dem Bild</string>
     <string name="high_light_warning_percent">Wenn die Lichtstärke unter 50% fällt, wird die Warnung ausgeschaltet.\n Sofortige Lichtstärke:</string>
     <string name="low_light_warning_desc">Es gibt sehr wenig Licht in der Umgebung, in der Sie sich befinden, die Kamera kann nicht lesen. Bitte begeben Sie sich in eine hellere Umgebung, damit die Kamera Ihren Ausweis genauer lesen kann.</string>
     <string name="low_light_warning_percent">Wenn die Lichtstärke über 10 % steigt, wird die Warnung ausgeschaltet.\n Lichtstärke: </string>
+
+    <string name="take_picture">Foto machen</string>
+    <string name="toggle_flash">Blitzlicht umschalten</string>
+    <string name="close_document_preview">Dokumentvorschau schließen</string>
+    <string name="confirm_document">Dokument bestätigen</string>
+    <string name="crop_error">Fehler beim Zuschneiden des Dokuments</string>
+    <string name="hold_steady">Bitte halten Sie das Telefon ruhig und warten Sie nach dem Drücken der Taste</string>
+    <string name="id_not_detected">Die ID-Karte konnte nicht erkannt werden, bitte versuchen Sie es erneut</string>
+    <string name="invalid_front_id">Die Vorderseite des Personalausweises ist ungültig</string>
+    <string name="capturing_conditions_error">Bitte vergewissern Sie sich, dass Ihr Ausweis in der idealen Umgebung, d. h. bei geeignetem Licht, Abstand und Winkel, angebracht ist, und versuchen Sie es erneut</string>
+
+    <string name="id_near">Habe mein Ausweis zur Hand</string>
+    <string name="alone_for_authentication">Identifizierung wird eigenständig durchgeführt</string>
+    <string name="favorable_conditions">Licht- und Geräuschbedingungen sind angemessen</string>
+    <string name="suitable_internet">Meine Internetgeschwindigkeit ist angemessen</string>
+    <string name="unsuitable_internet">Die Qualität Ihrer Internetverbindung ist derzeit nicht ausreichend für die Authentifizierung. Bitte versuchen Sie es später erneut</string>
+
+    <string name="not_reach_you">Wir konnten Sie nicht erreichen</string>
+    <string name="not_reach_you_detail">Wir konnten Sie leider nicht erreichen, um die Video-Identifizierung durchzuführen</string>
+    <string name="okay">OK</string>
+
+    <string name="verification_failed_title">Identifizierung fehlgeschlagen</string>
+    <string name="verification_failed_desc">Identifizierung fehlgeschlagen. Bitte versuchen Sie es später erneut.</string>
+    <string name="selfie_comparison_error">Ihr Ausweisfoto stimmt nicht mit Ihrem Selfie überein. Bitte machen Sie ein neues.</string>
+    <string name="selfie_verification_error">Sie haben ausreichend Versuche unternommen, Vielen Dank.</string>
+    <string name="nfc_comparison_error">Ihre Formular und NFC Daten stimmen nicht überein. Bitte nehmen Sie das korrekte Ausweisfoto erneut auf.</string>
+    <string name="nfc_verification_error">Ihre Identifikationsdaten stimmen nicht mit den Angaben im Formular überein. Sie haben ausreichend Versuche unternommen, Vielen Dank.</string>
 </resources>

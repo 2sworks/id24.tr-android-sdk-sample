@@ -10,7 +10,7 @@ This design module does not contain logic. It contains only design and resource 
 
 This code is ;
 
-<pre> api 'com.identify.sdk:android:1.3.2' </pre>  
+<pre> api 'com.identify.sdk:android:1.4.4' </pre>  
 
 **You don't need to add. it was added.**
 
@@ -24,7 +24,7 @@ This code is ;
 
 <pre>include ':design'</pre>
 
-Step 2. Add the Gitlab repository to your build file
+Step 2. Add the Github repository to your build file
 
 Add it in your root build.gradle at the end of repositories:
 
@@ -33,15 +33,13 @@ Add it in your root build.gradle at the end of repositories:
  <pre>allprojects {
 repositories {
 ...
+   maven { url 'https://jitpack.io' }
    maven {
-            url 'https://gitlab.com/api/v4/projects/26590072/packages/maven'
-            name "GitLab"
-            credentials(HttpHeaderCredentials) {
-                name = 'Private-Token'
-                value = 'xxxxxxxxxxxxxxx'
-            }
-            authentication {
-                header(HttpHeaderAuthentication)
+            url = 'https://maven.pkg.github.com/business-service-solution-gmbh/id24.tr-android-sdk'
+            name = "GitHubPackages"
+            credentials {
+                username = "bssserviceacc"
+                password = "xxxxxx"
             }
         }
 }
@@ -86,7 +84,6 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
             .setCallConnectionTimeOut(20000)
             .setOpenIntroPage(false)
             .setDocumentType(DocType.NONE)
-            .setModuleCacheType(ModuleCacheType.CONTINUE_FROM_CALL)
             .setSslCertificateInformation(listOf(SslCertificateInformation("(ssl sha256 finger print)sha256/DGBYYE8aafeisJmKsjlJTnOGA6PfHJ02kdZYS1+SjhY","(domain)api.identifytr.com")))
             .setNfcDependency(NfcDependency(wantToOpenOcr = true,"SerialNo(Z24I06557=example)","DateOfBirth(YYMMDD)","DateOfExpiry(YYMMDD)"))
             .setOpenThankYouPage(false)
@@ -133,7 +130,6 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
                 .setCallConnectionTimeOut(5000)
                 .setVideoRecordTime(5000)
                 .setDocumentType(DocType.NONE)
-                .setModuleCacheType(ModuleCacheType.ALWAYS_BACK_TO_TOP)
                 .setNfcDependency(new NfcDependency(true,"SerialNo","DateOfBirth(YYMMDD)","DateOfExpiry(YYMMDD)"))
                 .setSslCertificateInformation(sslCertificateInformations)
                 .setOpenThankYouPage(true)
