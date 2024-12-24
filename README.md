@@ -430,6 +430,10 @@ Permissions used within the sdk (don't need to add, attached in the library)
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-feature android:name="android.hardware.nfc" />
     <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
 ```
 
 
