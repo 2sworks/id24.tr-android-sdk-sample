@@ -34,14 +34,10 @@
 	<color name="notFoundBackground">#DD222222</color>
 	<color name="warningColor">#FFA900</color>
 
-
-
-
-
-
-
-
-
-
+	<color name="crop_bg_warning_color">#00d1fe</color>
+	<color name="cropBlack">#FF000000</color>
+	<color name="cropWhite">#FFFFFFFF</color>
+	<color name="colorBlackFortyPercentAlpha">#66000000</color>
+	<color name="button_text_color">#3447D6</color>
 
 </resources>

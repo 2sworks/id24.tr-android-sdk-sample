@@ -13,11 +13,13 @@ import com.identify.design.intro.IntroFragment
 import com.identify.design.liveness.LivenessDetectionModuleFragment
 import com.identify.design.nfc.NfcModuleFragment
 import com.identify.design.permission.PermissionFragment
+import com.identify.design.prepare.PrepareModuleFragment
 import com.identify.design.selfie.SelfieModuleFragment
 import com.identify.design.signature.SignatureModuleFragment
 import com.identify.design.speech.SpeechModuleFragment
 import com.identify.design.thanks.ThankYouFragment
 import com.identify.design.util.alert
+import com.identify.design.verification.VerificationFailFragment
 import com.identify.design.video.VideoRecordModuleFragment
 import com.identify.design.webrtc.CallModuleFragment
 import com.identify.sdk.BaseIdentifyActivity
@@ -33,6 +35,7 @@ class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
     override fun getSpeechModuleFragmentInstance(): Fragment? = SpeechModuleFragment.newInstance()
 
     override fun getSelfieModuleFragmentInstance(): Fragment? = SelfieModuleFragment.newInstance()
+    override fun getPrepareModuleFragmentInstance(): Fragment? = PrepareModuleFragment.newInstance()
 
     override fun getValidateAddressModuleFragmentInstance(): Fragment?  = ValidateAddressModule.newInstance()
 
@@ -43,6 +46,8 @@ class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
     override fun getCallModuleFragmentInstance(isRedirect: Boolean): Fragment? = CallModuleFragment.newInstance(isRedirect)
 
     override fun getIntroFragmentInstance(): Fragment? = IntroFragment.newInstance()
+
+    override fun getVerificationFailFragmentInstance(): Fragment? = VerificationFailFragment.newInstance()
 
     override fun getThankYouFragmentInstance(): Fragment? = ThankYouFragment.newInstance()
 
