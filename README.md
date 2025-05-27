@@ -434,6 +434,7 @@ Permissions used within the sdk (don't need to add, attached in the library)
     <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
 ```
 
 
